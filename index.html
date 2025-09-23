@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://efuturo.org/wp-content/uploads/2025/05/cropped-EFuturo-AmarVerde-32x32.png"
+      sizes="32x32"
+    />
+    <title>EFuturo - Ecomision</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/juego.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <div class="pantalla-bienvenida">
+        <div>
+          <img src="./img/lucian/Lucian_N10.png" alt="Lucian señalando hacia abajo" />
+          <h1 class="titulo-subtitulo">TU GUARDIÁN</h1>
+          <p class="texto-alt">Tu guardián verde cerca a ti</p>
+          <a href="#flipbook">
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+        </div>
+      </div>
+      <div id="flipbook" class="contenedor-historia">
+        <div id="pagina1" class="page pagina">
+          <img id="residuos-pag1" src="./img/fondos/historia/Historia_1.1_.png" alt="residuos" />
+          <div class="contenedor-selecciones hide">
+            <button class="historia-button titulo-subtitulo neutral-btn">Continuar</button>
+          </div>
+        </div>
+        <div id="pagina2" class="page pagina">
+          <div class="contenedor-selecciones hide">
+            <button class="historia-button titulo-subtitulo neutral-btn">Continuar</button>
+          </div>
+        </div>
+        <div id="pagina3" class="page pagina">
+          <div class="contenedor-decision hide">
+            <div class="contenedor-opciones texto-alt">
+              <ol type="A">
+                <li>Evitan malos olores y la presencia de plagas.</li>
+                <li>
+                  Se pueden transformar en abono que mejora el suelo y evita que nutrientes y
+                  materia lleguen al agua.
+                </li>
+                <li>Hacen que la basura desaparezca de inmediato.</li>
+              </ol>
+            </div>
+            <div class="contenedor-selecciones">
+              <button class="historia-button titulo-subtitulo op-btn">A</button>
+              <button class="historia-button titulo-subtitulo op-btn">B</button>
+              <button class="historia-button titulo-subtitulo op-btn">C</button>
+            </div>
+          </div>
+        </div>
+        <div id="pagina4" class="page pagina">
+          <div class="contenedor-selecciones hide">
+            <button class="historia-button titulo-subtitulo neutral-btn">Continuar</button>
+          </div>
+        </div>
+        <div id="pagina5" class="page pagina">
+          <div class="contenedor-decision hide">
+            <div class="contenedor-opciones texto-alt">
+              <ol type="A">
+                <li>
+                  Reduce la cantidad de material que llega al relleno sanitario y evita que esos
+                  materiales obstruyan canales o contaminen el agua.
+                </li>
+                <li>Evita que huelan mal al acumularse en zonas críticas.</li>
+                <li>Ocupa menos espacio en la casa</li>
+              </ol>
+            </div>
+            <div class="contenedor-selecciones">
+              <button class="historia-button titulo-subtitulo op-btn">A</button>
+              <button class="historia-button titulo-subtitulo op-btn">B</button>
+              <button class="historia-button titulo-subtitulo op-btn">C</button>
+            </div>
+          </div>
+        </div>
+        <div id="pagina6" class="page pagina">
+          <div class="contenedor-juego hide">
+            <section class="score titulo-subtitulo">
+              <div class="timer-juego">
+                <p class="timer-juego-text"><span id="time-juego">50</span>s</p>
+              </div>
+              <div><span class="correct">0</span>/<span class="total">0</span></div>
+              <button id="play-again-btn" class="historia-button titulo-subtitulo neutral-btn">
+                Continuar
+              </button>
+            </section>
+            <section class="draggable-items"></section>
+            <section class="matching-pairs"></section>
+          </div>
+        </div>
+        <div id="pagina7" class="page pagina">
+          <div class="contenedor-decision hide">
+            <div class="contenedor-opciones texto-alt">
+              <ol type="A">
+                <li>
+                  Contaminan los materiales reciclables, impidiendo que se recuperen y obligando a
+                  enviar todo al relleno.
+                </li>
+                <li>
+                  Se convierten en abono rápidamente al descomponerse más fácilmente por los
+                  plásticos.
+                </li>
+                <li>
+                  No afectan a los materiales reciclables, se puede recuperar y separar de los
+                  aprovechables
+                </li>
+              </ol>
+            </div>
+            <div class="contenedor-selecciones">
+              <button class="historia-button titulo-subtitulo op-btn">A</button>
+              <button class="historia-button titulo-subtitulo op-btn">B</button>
+              <button class="historia-button titulo-subtitulo op-btn">C</button>
+            </div>
+          </div>
+        </div>
+        <div id="pagina7b" class="page pagina">
+          <div class="contenedor-decision hide">
+            <div class="contenedor-opciones texto-alt">
+              <ol type="A">
+                <li>
+                  Liberan sustancias tóxicas que pueden contaminar el agua, afectar la fauna y poner
+                  en riesgo la salud humana.
+                </li>
+                <li>
+                  Se dejan de fácil acceso para cualquiera que vaya y los tome sin conocer el daño
+                  que puede causar.
+                </li>
+                <li>Se degradan rápido al estar en el medio ambiente sin causar mayor daño.</li>
+              </ol>
+            </div>
+            <div class="contenedor-selecciones">
+              <button class="historia-button titulo-subtitulo op-btn">A</button>
+              <button class="historia-button titulo-subtitulo op-btn">B</button>
+              <button class="historia-button titulo-subtitulo op-btn">C</button>
+            </div>
+          </div>
+        </div>
+        <div id="pagina8b" class="page pagina">
+          <div class="contenedor-selecciones hide">
+            <button class="historia-button titulo-subtitulo cont-verde-btn">
+              Reiniciar historia
+            </button>
+          </div>
+        </div>
+        <div id="pagina8m" class="page pagina">
+          <div class="contenedor-selecciones hide">
+            <button class="historia-button titulo-subtitulo cont-rojo-btn">
+              Reiniciar historia
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-comp"></div>
+    </main>
+    <div id="footer"></div>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/turn.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script> -->
+    <script type="module" src="./js/include.js"></script>
+    <script type="module" src="./js/historia.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script type="module" src="./js/juego.js"></script>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://efuturo.org/wp-content/uploads/2025/05/cropped-EFuturo-AmarVerde-32x32.png"
+      sizes="32x32"
+    />
+    <title>Ecomision - Descubre tu personaje</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="form-ingreso">
+      <div class="form-ingreso-container">
+        <h2 class="titulo-subtitulo">¡Bienvenido al Test!</h2>
+        <p class="texto-alt">Antes de comenzar, necesitamos conocer tu nombre</p>
+        <form id="form-datos-personales">
+          <div class="campo-formulario texto-alt">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <button type="submit" class="btn-comenzar titulo-subtitulo">Comenzar Test</button>
+        </form>
+      </div>
+    </div>
+    <div id="form-container">
+      <div class="mute-audio">
+        <i id="audio-control-btn" class="fa-solid fa-volume-high"></i>
+        <span id="audio-text" class="texto-alt">Silenciar sonido</span>
+      </div>
+      <div class="texto-bienvenida titulo-subtitulo"></div>
+      <form id="form-preguntas">
+        <div class="top-pregunta">
+          <h2 class="titulo-subtitulo" id="numero-pregunta">Pregunta n</h2>
+          <picture class="imagen-lucian">
+            <img src="./img/lucian/Lucian_N1.png" alt="lucian" />
+          </picture>
+        </div>
+        <div class="contenedor-preguntas">
+          <div class="barra-avance"></div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">En tu grupo de amigos, tú eres más…</h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>Quien da consejos prácticos y tranquilos.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Quien siempre inventa algo nuevo con lo que hay.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Quien quiere que todos hagan las cosas bien y ordenadas.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Quien asume los riesgos y protege al grupo.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              Encuentras una botella plástica vacía en la calle: ¿qué haces?
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>Si está sucia, la limpio y la dispongo adecuadamente en la bolsa de reciclaje</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>La guardo por si puedo transformarla en algo útil.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Pienso que, si no se gestiona, terminará dañando el suelo, prefiero depositarla en
+                  el contenedor correcto.
+                </p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Me preocupa que algunos envases contengan algo peligroso, verifico si requiere
+                  manejo especial.
+                </p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>No hacer ninguna acción y seguir por delante</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              En relación al agua en casa (uso en limpieza, ducha, riego), tú normalmente:
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Reutilizas aguas de la ducha o lavadora para riego y fomentas el ahorro del agua.
+                </p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Evitas verter aceites de cocina usado al fregadero y reciclas el agua cuando es
+                  posible.
+                </p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Buscas soluciones caseras para captar agua y reutilizarla.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Cuidas que productos químicos domésticos no entren al sistema de agua para evitar
+                  que se contamine.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              Cuando ves restos de frutas o verduras después de cocinar, piensas que…
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>Son alimento para la tierra, deberían volver al suelo.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Tal vez podrían usarse para hacer otra cosa creativa, no todo es basura.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Si no se separan bien terminan contaminando el agua y eso me preocupa.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Algunos restos pueden atraer plagas o enfermedades, hay que manejarlos con
+                  cuidado.
+                </p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Disponer el residuo en cualquier basura.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              ¿Qué haces cuando terminas un jugo en caja (Tetrapak)?
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Me aseguro de vaciar el resto de contenido en orgánicos y luego si se dispone en
+                  la bolsa blanca.
+                </p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Pienso en usarlo como artesanías o manualidades.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Reflexiono en cómo esos empaques duran tanto y afectan a la tierra.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Me preocupa si queda con residuos líquidos que puedan contaminar o atraer bichos.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              ¿Qué haces con las cosas que ya no sirven en casa?
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>Trato de repararlas o darles otro uso para extender su vida útil.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Reviso si pueden reciclarse y van a la bolsa correcta.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Pienso si son orgánicas y podrían regresar al ciclo natural.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Me fijo si son peligrosas (pilas, químicos) y las separo con cuidado.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Tirarlo en la basura porque no funciona.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">¿Qué haces con las pilas usadas en tu casa?</h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>Busco un punto de recolección segura.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Emplear pilas recargables que permitan extender su uso y vida útil</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Las separo de los demás residuos para que no contaminen.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Pienso en cómo afectan al suelo si no se gestionan bien.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Desecharlas en la primera basura que encuentro</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              Si tu comunidad crea un reto para mejorar la gestión de residuos, ¿qué rol tomarías?
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Enseñar cómo compostar y explicar por qué importa devolver materia a la tierra.
+                </p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Coordinar la separación y buscar alianzas con recicladores locales.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Idear proyectos creativos con materiales que ya no sirven.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Asegurar protocolos para residuos que representen un riesgo (pilas, químicos).
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              Ves basura flotando en un canal cercano: tu primer pensamiento es…
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>¿Cómo podemos devolver el equilibrio al ecosistema con soluciones naturales?</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  ¿Cómo evitar que esto afecte la vida del agua y qué materiales se pudieron
+                  separar?
+                </p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>¿Cómo podemos evitar la contaminación al transformar en algo?</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>¿Hay sustancias peligrosas allí que requieran reporte y manejo especializado?</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              Piensas en el futuro de tu barrio: ¿qué imagen te gustaría ver?
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>Huertas y suelos fértiles donde vuelva lo que se consume.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Sistemas de reciclaje que impulsen emprendimientos locales.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Comunidades creativas que transformen lo desechado en recursos.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Zonas seguras donde los residuos peligrosos se gestionen correctamente.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              En relación con vegetación y corredores verdes en tu entorno, tú prefieres:
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>Cultivar y proteger especies que nutran el suelo y atraigan biodiversidad.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Promover zonas limpias y señalizadas que eviten contaminación del hábitat.</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>
+                  Diseñar pequeños proyectos participativos (jardines con materiales reciclados).
+                </p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>Asegurar que no se ingresen materiales peligrosos a estos espacios.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pregunta-contenedor">
+            <h3 class="pregunta-texto texto-alt">
+              Si tuvieras que dar un consejo rápido sobre residuos, dirías:
+            </h3>
+            <ul class="opciones-contenedor">
+              <li class="opcion-pregunta texto-alt">
+                <p>“Devuelve a la tierra lo que le pertenece.”</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>“Separa lo limpio y dalo al que puede aprovecharlo.”</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>“Si no sirve ni se transforma, al negro debe.”</p>
+              </li>
+              <li class="opcion-pregunta texto-alt">
+                <p>“Lo peligroso no se mezcla: Entrégalo de forma segura en el lugar correcto.”</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="navegacion-formulario">
+          <button type="button" id="anterior-btn" class="btn-desactivado titulo-subtitulo" disabled>
+            Anterior
+          </button>
+          <button type="button" id="siguiente-btn" class="titulo-subtitulo">Siguiente</button>
+        </div>
+      </form>
+    </div>
+    <div id="resultados-container"></div>
+    <div id="rating-section"></div>
+    <div id="footer"></div>
+    <script src="./js/include.js"></script>
+    <script type="module" src="./js/formulario.js"></script>
+  </body>
+</html>

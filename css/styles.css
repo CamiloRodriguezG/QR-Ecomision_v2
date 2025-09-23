@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* 
+Variables de colores
+*/
+
+:root {
+  --fuente-principal: 'Rubik', sans-serif;
+  --fuente-secundaria: 'Merriweather', serif;
+
+  /* Propuestos por ilustradora */
+  --color-amarillo: #fcc427;
+  --color-verde-claro: #39b54a;
+  --color-rosa: #ff5c5c;
+  --color-azul: #4672c1;
+  --color-cafe: #8c6239;
+
+  /* vienen desde regla de marca */
+  --color-negro: #1d1d1b;
+  --color-verde: #1d3f2d;
+  --color-blanco: #fefbf2;
+  --color-zapote: #ca900e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.titulo-subtitulo {
+  font-family: var(--fuente-principal);
+}
+
+.texto-alt {
+  font-family: var(--fuente-secundaria);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 20px 50px;
+  border-radius: 30px;
+  transition: transform 0.3s ease, opacity 1s ease-in-out;
+  font-size: 1rem;
+}
+
+.texto-verde {
+  color: var(--color-verde-claro);
+}
+
+.texto-azul {
+  color: var(--color-azul);
+}
+
+.texto-negro {
+  color: var(--texto-negro);
+}
+
+.texto-rojo {
+  color: var(--color-rosa);
+}
+
+.bold {
+  font-weight: 800;
+}
